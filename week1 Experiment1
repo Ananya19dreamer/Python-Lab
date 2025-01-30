@@ -1,0 +1,102 @@
+#Print "Hello World"
+print("Hello World")
+
+#Calculate the sum of two numbers
+num1 = 5
+num2 = 3
+sum = num1 + num2
+print(sum)
+
+
+#Find the square of a number
+num = 4
+square = num ** 2
+print(square)
+
+
+#Accept the user's name and greet them with it
+name = input("enter your name:")
+print(f"hello, {name}")
+
+
+#Check whether a number is even or odd
+num=int(input("enter a number:"))
+if num % 2 == 0:
+    print("even")
+else:
+    print("odd")
+    
+
+#Write a python program that takes a list and returns a new list with unique elements of a first list
+def unique_element(lst):
+    return list(set(lst))
+lst = [1,2,2,3,4,4,5]
+print(unique_element(lst))
+
+
+#convert celsius to farenheit
+celsius=float(input("enter the radius:")
+fahrenheit=(celsius * 9/5)+32
+print(f"Temperature in Farenheit:{fahrenheit}")
+
+
+#calculate the area of a circle
+import math
+radius = float(input("enter the radius:"))
+area = math.pi * (radius ** 2)
+print(f"area of the circle:{area}")
+
+
+#Reverse a given string
+text = input("enter a string:")
+print("reversed string:", text[::-1])
+
+
+#check if a number is a prime number
+num = int(input("enter a number:"))
+if num>1:
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            print("Not a prime number")
+            break
+        else:
+            print("Prime number")
+else:
+            print("Not a prime number")
+            
+            
+            
+#calculate the factorial of a number           
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+num = int(input("enter a number:"))
+print(f"Factorial:{factorial(num)}")
+
+
+
+#Find the largest item from a given list
+lst = [10,20,4,45,99]
+print("Largest element:",max(lst))
+
+
+
+#write a python program to check whether a number is in a given range
+def is_in_range(n, start, end):
+    return start(<=n <=end)
+print(is_in_range (10, 5, 20))
+print(is_in_range(25, 5, 20))
+
+
+
+#calculate the number of uppercase letter and lower case letter in a string
+def count_case(s):
+    upper_case = sum(1 for c in s if c.isupper())
+    lower_case = sum(1 for c in s if c.islower())
+    return upper_case, lower_case
+s=input("enter a string")
+upper, lower = count_case(s)
+print(f"upper case letter:{upper}")
+print(f"lower case letter:{lower}")
